@@ -19,3 +19,13 @@ Chcem vedieť aká rýchlosť to je v m/s a ktas.
 //1.
 let automobil = "auto"
 let servis1 = "servis"
+print(automobil+servis1)
+
+let p1 = "ľadový"
+let p12 = "\(p1) čaj"
+print(p12)
+
+let p2 = "poly"
+let p23 = "\(p2)styrén"
+print(p23)
+
