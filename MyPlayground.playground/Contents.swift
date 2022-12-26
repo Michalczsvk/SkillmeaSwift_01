@@ -77,7 +77,18 @@ let rodneCislo = 8504017321
 rodneCislo.isMultiple(of: 14)
 100.isMultiple(of: 2)
 
+//03.diel
+5 + 1
+(4 - 2)*5
+3*3
+//modulo
 
+var modulo1 = 6%2
+print(modulo1)
+var modulo2 = 9%4
+print(modulo2)
+modulo2 = 9 % 5
+print(modulo2)
 
 
 
