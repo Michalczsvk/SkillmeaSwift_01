@@ -122,6 +122,12 @@ let pocetPsov05a = 2
 
 let celkovyPocetPsov = pocetPsov05 + String(pocetPsov05a)
 
+//06. String Interpolation
+let vek06 = 28
+let vypis06 = "mám \(vek06) rokov"
+let vsetko06 = "Dnes \(vypis06) a je to fajn"
 
-
+let cislo06 = 8
+let spocitanie06 = "\(cislo06) + \(cislo06) = \(cislo06 + cislo06)"
+print(spocitanie06)
 
