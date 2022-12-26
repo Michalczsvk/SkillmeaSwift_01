@@ -90,6 +90,20 @@ print(modulo2)
 modulo2 = 9 % 5
 print(modulo2)
 
+//04 Združené operátory
+
+var odbehnuteKilometre = 6
+var dnesSomOdbehol = 3
+
+var odbehnuteKilometreCelkovo = odbehnuteKilometre + dnesSomOdbehol
+var odbehnuteKilometreCelkovo2 = odbehnuteKilometre
+odbehnuteKilometreCelkovo2 += dnesSomOdbehol
+/*
+    +=
+    -=
+    *=
+    %=
+ */
 
 
 
