@@ -29,3 +29,26 @@ let p2 = "poly"
 let p23 = "\(p2)styrén"
 print(p23)
 
+// 2. Automatizuj vzorec na výpočet obvodu obdĺžnika
+
+var stranaA : Double = 5
+var stranaB : Double = 4.2
+let vypocetObvodu : Double = 2 * (stranaA + stranaB)
+let veta = """
+"Pro  strany a= \(stranaA) cm
+a     stranu b= \(stranaB) cm
+se rovná obvod=\(vypocetObvodu) cm
+"""
+print(veta)
+
+// 3. Automatizuj vzorec na výpočet objemu kocky
+
+var stranaKocky : Double = 6.3
+let vypocetObjemuKocky : Double = stranaKocky * stranaKocky * stranaKocky
+let vetaObjemKocky = "Pro stranu a = \(stranaKocky) cm se objem rovná = \(vypocetObjemuKocky) cm."
+print(vetaObjemKocky)
+
+/*
+ 4. Chopok je na slovensku najveternejšie miesto. Priemerná ročná rýchlosť vetra je 10 m/s.
+ Aká je priemerná rýchlosť vetra v jednotkách km/h a ktas?Programovanie je kažodenné riešenie problémov. Koľko ktas je 1km/h? Hľadajte, googlite, študujte :)
+ */
