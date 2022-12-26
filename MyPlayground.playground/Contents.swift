@@ -63,7 +63,7 @@ print(veta04)
 
 /*
  5. 29.11.1965 bola najvyššia nameraná rýchlosť vetra na slovensku na Skalnatom Plese. Vietor dosahoval rýchlosť 283 km/h.
- Chcem vedieť aká rýchlosť to je v m/s a ktas.
+ Chcem vedieť aká rýchlosť to je v m/s a ktas .
  */
 let najvyssiaNameranaRychlostKmH : Double = 283
 let vypocetKmNaMetr : Double = najvyssiaNameranaRychlostKmH / 3.5999971
