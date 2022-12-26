@@ -105,7 +105,22 @@ odbehnuteKilometreCelkovo2 += dnesSomOdbehol
     %=
  */
 
+// 05. Type Annotation
 
+let meno05 : String = "Alice"
+var skore: Double = 0
+
+//pretipovanie
+
+let prveCislo = 1
+let druheCislo = 2.4
+
+let vysledok05 = Double(prveCislo) + druheCislo
+
+let pocetPsov05 = "Doma máme psov :"
+let pocetPsov05a = 2
+
+let celkovyPocetPsov = pocetPsov05 + String(pocetPsov05a)
 
 
 
