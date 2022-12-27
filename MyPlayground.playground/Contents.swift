@@ -128,3 +128,46 @@ neparneCisla.sorted()
 prvocisla.sorted()
 let setSubstracting = neparneCisla.subtracting(prvocisla).sorted()
 print(setSubstracting)
+
+
+// 03 Dictionary (Slovník)
+
+// jednoduchá práca s Polom
+
+var letiska = ["LHR", "London Heathrow", "Anglicko"]
+print("Kód letiska: \(letiska[0])")
+print("Názov letiska: \(letiska[1])")
+print("Krajina: \(letiska[2])")
+
+
+//problém nastáva
+letiska.remove(at: 1)
+print("Názov letiska: \(letiska[1])")
+
+//dictionary
+// optional = dáta môžu obsahovať hodnotu alebo nie (NIL)
+
+var letiska2 = [
+    "idLetiska": "LHR",
+    "menoLetiska": "London Heathrow",
+    "krajina": "Anglicko"
+]
+
+print(letiska2["idLetiska"])
+print(letiska2["menoLetiska"])
+print(letiska2["krajina"])
+print(letiska2["riaditelLetiska"]) // kľúč sa nenachádza v dictiory tak vypíše "nil"
+print(letiska2["idLetiska", default: "N/A"]) // problém nevyhadzuje, pretože som pridal defaultnú hodnoty ak by nenašiel hodnotu v záaname alebo záznam
+
+
+// dictionary obsahuje rôzne datové typy
+var prvocislo = [
+    1: false,
+    2: true,
+    3: true,
+    4: false,
+]
+
+print(prvocislo[1, default: true])
+print(prvocislo[12, default: false])
+// pokračovat t= 08:14
