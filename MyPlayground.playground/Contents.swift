@@ -93,4 +93,38 @@ print(ovoci)
 let ovocieOpacne = ovoci.reversed()
 print(ovocieOpacne)
 
+// 02 Set(Množina)
+// neumožňuje obsahovat duplicity
+// poradie nie je podstatné
  
+var farby = Set(["červená", "zelená", "modrá", "fialová", "ružová", "žltá", "zelená" ])
+print(farby) // zelená se zobrazí jenom jednou a poradí je rôzne
+
+// insert = pridávanie
+farby.insert("pomarančová")
+print(farby)
+
+
+// union = funkcionalita, ktorá spojuje  2 množiny(sety) + sorted(zoradenie)
+let neparneCisla: Set = [1,3,5,7,9]
+let parneCisla: Set = [0,2,4,6,8]
+let setUnion = neparneCisla.union(parneCisla)
+let setUnion1 = neparneCisla.union(parneCisla).sorted()
+let setUnionSorted = setUnion.sorted()
+print(setUnion)
+print(setUnion.sorted())
+
+ // intersection = výber duplicitných hodnot z dvou množin
+let prvocisla: Set = [2,3,5,7]
+let setInersection = prvocisla.intersection(neparneCisla).sorted()
+print(setInersection)
+
+// symmetricDifference = výber neduplicitných hodnot z dvou množin
+let setSymmetricDifference = neparneCisla.symmetricDifference(prvocisla).sorted()
+print(setSymmetricDifference)
+
+// Subtracting = odčíta z množiny hodnoty ktoré sa nachádzajú v druhej množine a zanechá zbývajúce hodnoty
+neparneCisla.sorted()
+prvocisla.sorted()
+let setSubstracting = neparneCisla.subtracting(prvocisla).sorted()
+print(setSubstracting)
