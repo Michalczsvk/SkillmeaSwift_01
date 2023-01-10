@@ -176,8 +176,22 @@ print(prvocislo[1, default: true])
 print(prvocislo[2, default: false])
 print(prvocislo[12, default: false])
 
+var pocetObyvatelov = [String: Int]()
+pocetObyvatelov["BA"] = 450_000
+pocetObyvatelov["KE"] = 330_000
+pocetObyvatelov["PP"] = 180_000
 
 
+print(pocetObyvatelov)
+print(pocetObyvatelov["BA", default: 0])
+print(pocetObyvatelov["TT", default: 0])
+
+print(pocetObyvatelov.keys)
+print(pocetObyvatelov.values)
+print(pocetObyvatelov.count)
+print(pocetObyvatelov.)
+
+//adsf
 // pokračovat t= 08:14
 
 // iba som si testoval výpočet rč
