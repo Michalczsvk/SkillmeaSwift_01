@@ -189,7 +189,7 @@ print(pocetObyvatelov["TT", default: 0])
 print(pocetObyvatelov.keys)
 print(pocetObyvatelov.values)
 print(pocetObyvatelov.count)
-print(pocetObyvatelov.)
+
 
 //adsf
 // pokračovat t= 08:14
