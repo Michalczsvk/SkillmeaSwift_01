@@ -1,4 +1,5 @@
 import UIKit
+import Darwin
 
 // array
 let ovocie = ["jablko","hruška","banán","ananás"]
@@ -166,8 +167,56 @@ var prvocislo = [
     2: true,
     3: true,
     4: false,
+    5: true,
+    6: false,
+    7: true
 ]
 
 print(prvocislo[1, default: true])
+print(prvocislo[2, default: false])
 print(prvocislo[12, default: false])
+
+
+
 // pokračovat t= 08:14
+
+// iba som si testoval výpočet rč
+/*
+var rc = 8504017335
+rc.isMultiple(of: 11)
+
+var rok: String
+var mesic: String
+var den: String
+
+rok = "1985"
+mesic = "04"
+den = "01"
+var rocnik = rok.dropFirst(2)
+var rcPosledniCast = "0000"
+
+var rc1 = rocnik + mesic + den + rcPosledniCast
+var rcCislo = Int(rc1)
+var delitelneJedenasti: Bool = rcCislo!.isMultiple(of: 11)
+
+func Vypocet(cisloVstup:Int)-> Bool{
+    delitelneJedenasti = cisloVstup.isMultiple(of: 11)
+    return delitelneJedenasti
+}
+
+if delitelneJedenasti == false
+{
+    while delitelneJedenasti == false{
+        rcCislo! += 1
+        Vypocet(cisloVstup: rcCislo!)
+        print(Vypocet(cisloVstup: rcCislo!))
+    }
+    print(rcCislo!)
+    
+}else{ print(rcCislo ?? "Chyba")
+    
+}
+print("Hotovo")
+
+
+*/
