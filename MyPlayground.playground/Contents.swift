@@ -196,61 +196,125 @@ print(pocetObyvatelov.count)
 let arr = [0, 34, -14, -43, -1, 38, -8, 26, 44, 43, 33, 50, -45, 2, -13, -38, -6, -50, -46, 49, -39, 21, 19, 10, 42, -40]
 print(arr.sorted())
 
-//2.1 Zisti, či sa "duic" nachádza v Array
-//2.2 Aký index má slovo "eros"
+
+
 
 let arrSlova = ["tempus", "nulla", "cras", "orci", "vel", "non", "commodo", "imperdiet", "enim", "eu", "varius", "amet", "tempus", "id", "quam", "vulputate", "nunc", "morbi", "lectus", "fringilla", "elit", "augue", "eros", "sagittis", "dolor", "donec", "ultrices", "mattis", "ultricies", "elit", "fringilla", "augue", "quis", "sagittis", "ipsum", "accumsan", "mauris", "tincidunt", "malesuada", "venenatis", "felis", "leo", "nec", "non", "hendrerit", "auctor", "efficitur", "laoreet", "id", "quisque", "vitae", "libero", "morbi", "felis", "eu", "condimentum", "ut", "magna", "quis", "arcu", "ex", "mi", "duis", "pulvinar", "vitae", "suscipit", "tempus", "non", "bibendum", "nullam", "volutpat", "aliquam", "vivamus", "sed", "quam", "velit", "ultricies", "ut", "auctor", "magna", "ligula", "nec", "nisi", "rutrum", "sem", "sed", "a", "interdum", "fringilla", "viverra", "ullamcorper", "nibh", "maecenas", "pulvinar", "vestibulum", "odio", "sit", "vel", "metus", "fusce"]
 
+//2.1 Zisti, či sa "duic" nachádza v Array
 print(arrSlova.contains("duic"))
 
+//2.2 Aký index má slovo "eros"
+//var vysledok22 = arrSlova.firstIndex(of: "eros")
+//print("Slovo EROS má index \(vysledok22 ?? 0)")
+print(arrSlova[22])
+//arrSlova[22]
 
 
-//arrSlova[0]
-//print(arrSlova.firstIndex(of: "eros"))
+let prv1 = [321, 270, 229, 161, 378, 148, 316, 152, 180, 108, 188, 225, 333, 358, 189, 112, 196, 373, 252, 385, 239, 363, 171, 191, 155, 338, 117, 255, 388, 259, 272, 355, 266, 203, 220, 118, 124, 209, 170, 219, 136, 274, 357, 317, 256, 320, 356, 397, 315, 176, 305, 182, 347, 336, 185, 172, 398, 121, 318, 212, 127, 132, 122]
+let prv2 = [311, 159, 138, 461, 389, 226, 158, 370, 130, 465, 221, 376, 485, 169, 246, 224, 222, 450, 430, 113, 364, 245, 398, 282, 314, 116, 324, 446, 371, 156, 428, 175, 125, 346, 360, 162, 238, 395, 412, 354, 285, 232, 143, 140, 269, 303, 443, 133, 243, 210, 448, 381, 417, 301, 258, 268, 200, 195, 394, 483, 260, 141, 383]
 
+let prv11: Set = [321, 270, 229, 161, 378, 148, 316, 152, 180, 108, 188, 225, 333, 358, 189, 112, 196, 373, 252, 385, 239, 363, 171, 191, 155, 338, 117, 255, 388, 259, 272, 355, 266, 203, 220, 118, 124, 209, 170, 219, 136, 274, 357, 317, 256, 320, 356, 397, 315, 176, 305, 182, 347, 336, 185, 172, 398, 121, 318, 212, 127, 132, 122]
+let prv22: Set = [311, 159, 138, 461, 389, 226, 158, 370, 130, 465, 221, 376, 485, 169, 246, 224, 222, 450, 430, 113, 364, 245, 398, 282, 314, 116, 324, 446, 371, 156, 428, 175, 125, 346, 360, 162, 238, 395, 412, 354, 285, 232, 143, 140, 269, 303, 443, 133, 243, 210, 448, 381, 417, 301, 258, 268, 200, 195, 394, 483, 260, 141, 383]
 
+// 3.1 Nájdi zhodný prvok, ktorý majú obe polia identický
+let interseption2 = prv11.intersection(prv22)
+print(interseption2)
 
+// 3.2 Ak sa prvok nachádza viackrát v poliach, zobraz ho iba raz.
+print(prv1.count)
+print(prv11.count)
+print(prv2.sorted())
+print(prv22.sorted())
 
-//adsf
-// pokračovat t= 08:14
-
-// iba som si testoval výpočet rč
-/*
-var rc = 8504017335
-rc.isMultiple(of: 11)
-
-var rok: String
-var mesic: String
-var den: String
-
-rok = "1985"
-mesic = "04"
-den = "01"
-var rocnik = rok.dropFirst(2)
-var rcPosledniCast = "0000"
-
-var rc1 = rocnik + mesic + den + rcPosledniCast
-var rcCislo = Int(rc1)
-var delitelneJedenasti: Bool = rcCislo!.isMultiple(of: 11)
-
-func Vypocet(cisloVstup:Int)-> Bool{
-    delitelneJedenasti = cisloVstup.isMultiple(of: 11)
-    return delitelneJedenasti
+if 1<2{
+    print("ano 1 je menšie ako 2")
 }
 
-if delitelneJedenasti == false
-{
-    while delitelneJedenasti == false{
-        rcCislo! += 1
-        Vypocet(cisloVstup: rcCislo!)
-        print(Vypocet(cisloVstup: rcCislo!))
-    }
-    print(rcCislo!)
-    
-}else{ print(rcCislo ?? "Chyba")
+
+var cislaX = [1, 2, 3, 4]
+cislaX.append(8)
+print(cislaX)
+if cislaX.count < 6{
+    cislaX.remove(at: 0)
+    print(cislaX)
+}
+
+let uzivatel = ""
+if uzivatel != ""{
+    print("Ahoj \(uzivatel)")
+}
+
+if uzivatel.isEmpty == true {
+    print("uzivatel je prázdný")
+}
+if uzivatel.isEmpty{
+    print("jiný spůsob zápisu")
+}else{
+    print("obsahuje znaky")
+}
+
+// další príklad
+
+var teplota2 = 18
+
+if teplota2 <= 17{
+    print("není moc teplo")
+}else if teplota2  >= 30{
+    print("je horúco")
+}else{
+    print("teplota je akurát")
+}
+//2.6 lekcia(Logické operátory)
+
+var a = true
+print(!a) // vypíše opačnú hodnotu
+
+teplota2 = 23
+if teplota2 > 20 && teplota2 < 30{
+    print("vonku je príjemne")
+}
+var vekUzivatela = 12
+var povoleniRodica = true
+
+if vekUzivatela <= 18 || povoleniRodica{ // povoleniRodica == true
+    print("uzivatel se může připojit")
+}
+//2.7(Switch)
+
+let pocetKolies = 6
+
+switch pocetKolies{
+case 1:
+    print("jazdím na jednokolke")
+case 2:
+    print("jazdím na kole")
+case 3:
+    print("jazdím na trojkolke")
+case 4:
+    print("jazdím na štvorkolke")
+default:
+    print("nejazdím")
+}
+
+let rasaPsa = "vyžla"
+
+switch rasaPsa{
+case "vyžla","pudl":
+    print("je to rasa vyžla nebo pudl")
+case "doberman":
+    print("je to rasa doberman")
+    fallthrough
+case "vlčiak":
+    print("je to rasa vlčiak")
+    fallthrough
+case "kokeršpanel":
+    print("je to rasa kokr")
+    fallthrough
+default:
+    print("iná rasa")
     
 }
-print("Hotovo")
 
+//fallthrough
 
-*/
