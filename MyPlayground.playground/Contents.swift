@@ -154,10 +154,10 @@ var letiska2 = [
     "krajina": "Anglicko"
 ]
 
-print(letiska2["idLetiska"])
-print(letiska2["menoLetiska"])
-print(letiska2["krajina"])
-print(letiska2["riaditelLetiska"]) // kľúč sa nenachádza v dictiory tak vypíše "nil"
+print(letiska2["idLetiska", default: "N/A"])
+print(letiska2["menoLetiska", default: "N/A"])
+print(letiska2["krajina", default: "N/A"])
+print(letiska2["riaditelLetiska", default: "N/A"]) // kľúč sa nenachádza v dictiory tak vypíše "nil"
 print(letiska2["idLetiska", default: "N/A"]) // problém nevyhadzuje, pretože som pridal defaultnú hodnoty ak by nenašiel hodnotu v záaname alebo záznam
 
 
@@ -189,6 +189,26 @@ print(pocetObyvatelov["TT", default: 0])
 print(pocetObyvatelov.keys)
 print(pocetObyvatelov.values)
 print(pocetObyvatelov.count)
+
+
+
+//1. Zoraď čísla od najmenšieho po najväčšie.
+let arr = [0, 34, -14, -43, -1, 38, -8, 26, 44, 43, 33, 50, -45, 2, -13, -38, -6, -50, -46, 49, -39, 21, 19, 10, 42, -40]
+print(arr.sorted())
+
+//2.1 Zisti, či sa "duic" nachádza v Array
+//2.2 Aký index má slovo "eros"
+
+let arrSlova = ["tempus", "nulla", "cras", "orci", "vel", "non", "commodo", "imperdiet", "enim", "eu", "varius", "amet", "tempus", "id", "quam", "vulputate", "nunc", "morbi", "lectus", "fringilla", "elit", "augue", "eros", "sagittis", "dolor", "donec", "ultrices", "mattis", "ultricies", "elit", "fringilla", "augue", "quis", "sagittis", "ipsum", "accumsan", "mauris", "tincidunt", "malesuada", "venenatis", "felis", "leo", "nec", "non", "hendrerit", "auctor", "efficitur", "laoreet", "id", "quisque", "vitae", "libero", "morbi", "felis", "eu", "condimentum", "ut", "magna", "quis", "arcu", "ex", "mi", "duis", "pulvinar", "vitae", "suscipit", "tempus", "non", "bibendum", "nullam", "volutpat", "aliquam", "vivamus", "sed", "quam", "velit", "ultricies", "ut", "auctor", "magna", "ligula", "nec", "nisi", "rutrum", "sem", "sed", "a", "interdum", "fringilla", "viverra", "ullamcorper", "nibh", "maecenas", "pulvinar", "vestibulum", "odio", "sit", "vel", "metus", "fusce"]
+
+print(arrSlova.contains("duic"))
+
+
+
+//arrSlova[0]
+//print(arrSlova.firstIndex(of: "eros"))
+
+
 
 
 //adsf
